@@ -6,7 +6,9 @@ RUN git clone https://github.com/PyungkangHong094/fdfam.git
 
 WORKDIR /home/fdhomepage/
 
-RUN pip install -r  requirements.txt
+RUN pip install -r requirements.txt
+
+RUN echo "SECRET_KEY=pxrrxsbks&-*4@)f4tjss*okko#evf_p9@8&4@!0$lj9wjxpp7" > .env
 
 RUN python manage.py migrate
 
