@@ -1,18 +1,13 @@
 (function ($) {
 	'use strict';
 
-	/* ========================================================================= */
-	/*	Page Preloader
-	/* ========================================================================= */
 
+	/*	Page Preloader */
 	$(window).on('load', function () {
 		$('.preloader').fadeOut(700);
 	});
 
-	/* ========================================================================= */
-	/*	Post image slider
-	/* ========================================================================= */
-
+	/*	Post image slider */
 	$('#post-thumb, #gallery-post').slick({
 		infinite: true,
 		arrows: false,
@@ -20,7 +15,6 @@
 		autoplaySpeed: 4000
 
 	});
-
 	$('#features').slick({
 		infinite: true,
 		arrows: false,
@@ -28,20 +22,13 @@
 		autoplaySpeed: 4000
 	});
 
-
-	/* ========================================================================= */
-	/*	Menu item highlighting
-	/* ========================================================================= */
-
-
+	/*	Menu item highlighting */
 	$('#navigation').sticky({
 		topSpacing: 0
 	});
 
 
-	/* ========================================================================= */
-	/*	Magnific popup
-	/* =========================================================================  */
+	/*	Magnific popup */
 	$('.image-popup').magnificPopup({
 		type: 'image',
 		removalDelay: 160, //delay removal by X to allow out-animation
@@ -58,8 +45,6 @@
 		fixedBgPos: true
 	});
 
-
-
 	//   magnific popup video
 	$('.popup-video').magnificPopup({
 		disableOn: 700,
@@ -69,10 +54,8 @@
 		preloader: false,
 		fixedContentPos: true
 	});
-	/* ========================================================================= */
-	/*	Portfolio Filtering Hook
-	/* =========================================================================  */
 
+	/*	Portfolio Filtering Hook */
 	$(document).ready(function () {
 		var containerEl = document.querySelector('.filtr-container');
 		var filterizd;
@@ -86,10 +69,8 @@
 		});
 	});
 
-	/* ========================================================================= */
-	/*	Testimonial Carousel
-	/* =========================================================================  */
 
+	/*	Testimonial Carousel */
 	//Init the carousel
 	$('#testimonials').slick({
 		infinite: true,
@@ -99,14 +80,7 @@
 	});
 
 
-
-
-
-	/* ========================================================================= */
-	/*   Contact Form Validating
-	/* ========================================================================= */
-
-
+	/*   Contact Form Validating */
 	$('#contact-submit').click(function (e) {
 
 		//stop the form from being submitted
@@ -120,17 +94,6 @@
 		var subject = $('#subject').val();
 		var message = $('#message').val();
 
-		/* in the next section we do the checking by using VARIABLE.length
-		where VARIABLE is the variable we are checking (like name, email),
-		length is a JavaScript function to get the number of characters.
-		And as you can see if the num of characters is 0 we set the error
-		variable to true and show the name_error div with the fadeIn effect. 
-		if it's not 0 then we fadeOut the div( that's if the div is shown and
-		the error is fixed it fadesOut. 
-		
-		The only difference from these checks is the email checking, we have
-		email.indexOf('@') which checks if there is @ in the email input field.
-		This JavaScript function will return -1 if no occurrence have been found.*/
 		if (name.length === 0) {
 			var error = true;
 			$('#name').css('border-color', '#D8000C');
@@ -165,9 +128,7 @@
 				'value': 'Sending...'
 			});
 
-			/* using the jquery's post(ajax) function and a lifesaver
-			function serialize() which gets all the data from the form
-			we submit it to send_email.php */
+
 			$.post('sendmail.php', $('#contact-form').serialize(), function (result) {
 				//and after the ajax request ends we check the text returned
 				if (result === 'sent') {
@@ -187,12 +148,7 @@
 
 })(jQuery);
 // End Jquery Function
-
-
-/* ========================================================================= */
-/*	Animated section
-/* ========================================================================= */
-
+/*	Animated section */
 var wow = new WOW({
 	offset: 100, // distance to the element when triggering the animation (default is 0)
 	mobile: false // trigger animations on mobile devices (default is true)
@@ -200,17 +156,12 @@ var wow = new WOW({
 wow.init();
 
 
-/* ========================================================================= */
-/*	Smooth Scroll
-/* ========================================================================= */
+/*	Smooth Scroll */
 var scroll = new SmoothScroll('a[href*=\'#\']');
 
 
 
-/* ========================================================================= */
-/*	Google Map Customization
-/* =========================================================================  */
-
+/*	Google Map Customization */
 function initialize() {
 	'use strict';
 
