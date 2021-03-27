@@ -2,9 +2,11 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
+RUN echo "django_image_fd4"
+
 RUN git clone https://github.com/PyungkangHong094/fdfam.git
 
-WORKDIR /home/fdhomepage/
+WORKDIR /home/fdfam/
 
 RUN pip install -r requirements.txt
 
