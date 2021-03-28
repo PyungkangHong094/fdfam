@@ -10,11 +10,11 @@ WORKDIR /home/fdfam/
 
 RUN pip install -r requirements.txt
 
-RUN echo "SECRET_KEY=pxrrxsbks&-*4@)f4tjss*okko#evf_p9@8&4@!0$lj9wjxpp7" > .env
+RUN pip install gunicorn
 
-RUN python manage.py migrate
+RUN pip install mysqlclient
 
 EXPOSE 8000
 
-CMD ["python","manage.py","runserver","0.0.0.0:8000"]
+CMD ["bash", "-c", "python manage.py collectstatic --noinput && python manage.py migrate --settings=fdhomepage.settings.deploy && gunicorn fdhomepage.wsgi --env DJANGO_SETTINGS_MODULE=fdhomepage.settings.deploy --bind 0.0.0.0:8000"]
 
