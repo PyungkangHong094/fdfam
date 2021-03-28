@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "django_image_fdfam1"
+RUN echo "django_image_fdfam2"
 
 RUN git clone https://github.com/PyungkangHong094/fdfam.git
 
