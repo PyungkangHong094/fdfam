@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-
+@import url('https://combinefonts.hanmesoft.com/cssServer/combine?korFont=KCC-eunyoung&engFont=Playball');
 html {
   background-color: #353b43;
   color: #737f8a;
@@ -52,11 +52,17 @@ h1::before{
   left: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   overflow: hidden;
+<<<<<<< HEAD
   border-right: 3px solid rgba(255, 255, 255, 0);
   animation: typing 5.5s steps(100);
 
+=======
+  border-right: 3px solid rgb(255, 255, 255);
+  animation: typing 3s steps(100);
+  animation-delay: 200ms;
+>>>>>>> df11ba7e933eacd0d27a2c5d7de7b8fa55f75a02
 }
 
 @keyframes typing{
@@ -603,7 +609,7 @@ a:hover {
 
 .navigation .logo img {
   height: auto;
-  width: 200px;
+  width: 90px;
 }
 
 .navigation .navigation-menu li.active a {
