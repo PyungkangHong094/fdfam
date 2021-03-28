@@ -54,9 +54,11 @@ h1::before{
   height: 100%;
   color: rgb(255, 255, 255);
   overflow: hidden;
+
   border-right: 3px solid rgb(255, 255, 255);
   animation: typing 3s steps(100);
   animation-delay: 200ms;
+
 }
 
 @keyframes typing{
