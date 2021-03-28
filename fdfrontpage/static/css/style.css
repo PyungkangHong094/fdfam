@@ -40,7 +40,7 @@ h1 {
   color:transparent;
   margin: 0;
   position: absolute;
-  transform: translate(2%, -20%);
+  transform: translate(-5%, -20%);
   filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
 }
 
@@ -55,7 +55,7 @@ h1::before{
   color: white;
   overflow: hidden;
   border-right: 3px solid rgb(255, 255, 255);
-  animation: typing 5.5s steps(30) 1s;
+  animation: typing 5.5s steps(35);
 }
 
 @keyframes typing{
