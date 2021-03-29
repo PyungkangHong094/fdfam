@@ -12,6 +12,8 @@ RUN pip install -r requirements.txt
 
 RUN pip install gunicorn
 
+RUN python manage.py collectstatic
+
 RUN pip install mysqlclient
 
 EXPOSE 8000
