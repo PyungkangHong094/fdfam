@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "django_image_fdfam2"
+RUN echo "django_image_fd4"
 
 RUN git clone https://github.com/PyungkangHong094/fdfam.git
 
@@ -12,11 +12,10 @@ RUN pip install -r requirements.txt
 
 RUN pip install gunicorn
 
-RUN echo "SECRET_KEY=pxrrxsbks&-*4@)f4tjss*okko#evf_p9@8&4@!0$lj9wjxpp7" > .env
+RUN python manage.py collectstatic
 
-RUN python manage.py migrate
+RUN pip install mysqlclient
 
 EXPOSE 8000
 
-CMD ["gunicorn", "fdhomepage.wsg", "--bind", "0.0.0.0:8000"]
-
+CMD ["bash", "-c", "python manage.py collectstatic --noinput && python manage.py migrate --settings=fdhomepage.settings.deploy && gunicorn fdhomepage.wsgi --env DJANGO_SETTINGS_MODULE=fdhomepage.settings.deploy --bind 0.0.0.0:8000"]
