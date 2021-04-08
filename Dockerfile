@@ -16,4 +16,4 @@ RUN python manage.py migrate
 
 EXPOSE 8000
 
-CMD ["gunicorn", "fdfam.wsgi", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "fdhomepage.wsgi", "--bind", "0.0.0.0:8000"]
