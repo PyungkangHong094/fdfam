@@ -32,7 +32,7 @@ SECRET_KEY = read_secret('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.180.83.90']
+ALLOWED_HOSTS = ['*']
 
 DATABASES = {
     'default': {
