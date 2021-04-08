@@ -16,7 +16,7 @@ import environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-ALLOWED_HOSTS = ['127.0.0.1','141.164.36.251', '141.164.36.251:8000','fdfam.com', '54.180.83.90:8000', ]
+ALLOWED_HOSTS = ['127.0.0.1','141.164.36.251', '141.164.36.251:8000','fdfam.com', '54.180.83.90', '54.180.83.90:8000', ]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
