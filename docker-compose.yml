@@ -18,8 +18,8 @@ services:
         - static-volume:/home/fdfam/staticfiles
         - media-volume:/home/fdfam/media
       secrets:
-        - DJANGO_SECRET_KEY
         - MYSQL_PASSWORD
+        - DJANGO_SECRET_KEY
     mariadb:
       image: mariadb:10.5
       networks:
