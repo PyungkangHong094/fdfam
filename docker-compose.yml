@@ -10,8 +10,8 @@ services:
       - media-volume:/data/media
     ports:
       - 80:80
-    fdfam:
-      image: django_image_fd:1
+    django_container_gunicorn:
+      image: django_test_image:5
       networks:
         - network
       volumes:
