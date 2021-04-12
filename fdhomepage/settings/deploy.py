@@ -2,7 +2,7 @@ from .base import *
 import environ
 
 def read_secret(secret_name):
-    file = os.path.join.open('/run/secrets/' + secret_name)
+    file = os.path.join(open('/run/secrets/' + secret_name))
     secret = file.read()
     secret = secret.rstrip().lstrip()
     file.close()
