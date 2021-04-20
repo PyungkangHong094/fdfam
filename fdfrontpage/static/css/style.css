@@ -2,7 +2,7 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 @import url('https://combinefonts.hanmesoft.com/cssServer/combine?korFont=KCC-eunyoung&engFont=Playball');
 html {
   background-color: #353b43;
@@ -35,27 +35,7 @@ p {
   }
 
 h1 {
-  white-space: nowrap;
-  color:transparent;
-  margin: 0;
-  position: absolute;
-  transform: translate(-5%, -20%);
-  filter: drop-shadow(5px 5px 5px rgb(255, 255, 255));
-}
-
-h1::before {
-  content: "FD HOLDINGS";
-  position: absolute;
-  margin: 10px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  border-right: 3px solid rgb(255, 255, 255);
-  animation: typing 3s steps(100);
-  animation-delay: 200ms;
+  filter: drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.856));
 }
 
 h6 {
@@ -63,21 +43,26 @@ h6 {
   color:transparent;
   margin: 0;
   position: absolute;
-  transform: translate(-5%, -20%);
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'KCC-eunyoung', sans-serif;
+  font-size: 32px;
 }
 
-h6::after{
-  content: 'For Dreaming "꿈을 위해" ';
+h6::before{
+  content: 'For Dreaming "꿈을 위해".';
   position: absolute;
-  margin: 10px;
+  margin: 4px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   color: rgb(255, 255, 255);
   overflow: hidden;
-  border-right: 3px solid rgba(255, 255, 255, 0);
+  border-right: 2px solid rgb(255, 255, 255);
   animation: typing 3s steps(100);
+  animation-delay: 200ms;
 }
 
 @keyframes typing{
@@ -627,6 +612,14 @@ a:hover {
   width: 90px;
 }
 
+@media (max-width: 768px){
+  .navigation .logo img {
+   position: absolute;
+   left: 50%;
+   margin-left: -42px;
+  }
+}
+
 .navigation .navigation-menu li.active a {
   color: #000000;
 }
@@ -645,11 +638,11 @@ a:hover {
 .navbar-toggle {
   border: 1px solid #ffffff;
   border-radius: 5px;
-  float: left;
+  float: right;
 }
 
 .navbar-toggle span {
-  background: #ffffff;
+  background: #004cd5;
 }
 
 .bg-1 {
