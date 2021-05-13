@@ -2,8 +2,8 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
-@import url('https://combinefonts.hanmesoft.com/cssServer/combine?korFont=KCC-eunyoung&engFont=Playball');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
 html {
   background-color: #353b43;
   color: #737f8a;
@@ -35,7 +35,7 @@ p {
   }
 
 h1 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
 }
 
 h6 {
@@ -43,15 +43,15 @@ h6 {
   color:transparent;
   margin: 0;
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'KCC-eunyoung', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
   font-size: 32px;
 }
 
 h6::before{
-  content: 'For Dreaming "꿈을 위해".';
+  content: '"For Dream"';
   position: absolute;
   margin: 4px;
   top: 0px;
@@ -62,7 +62,7 @@ h6::before{
   overflow: hidden;
   border-right: 2px solid rgba(255, 255, 255, 0);
   animation: typing 3s steps(100);
-  animation-delay: 200ms;
+  animation-delay: 100ms;
 }
 
 @keyframes typing{
