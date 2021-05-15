@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  background-color: #353b43;
   font-family: "Anaheim", sans-serif;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
@@ -43,7 +42,7 @@ h6 {
   color:transparent;
   margin: 0;
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Pathway Gothic One', sans-serif;
@@ -183,7 +182,7 @@ a:hover {
 }
 
 .border {
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
+  border-top: 2px solid rgb(0 0 0 / 37%);
   height: 1px;
   margin: 15px auto 0;
   position: relative;
@@ -453,7 +452,7 @@ a:hover {
 }
 
 .title h2 span {
-  color: #005bff;
+  color: #000000;
 }
 
 .title p {
@@ -1046,19 +1045,19 @@ a:hover {
 .portfolio-filter button {
   border: none;
   outline: none;
-  border: 1px solid rgba(236, 239, 241, 0.07);
+  border: 1px solid rgb(0, 0, 0);
   background: transparent;
   display: inline-block;
   font-size: 16px;
   padding: 6px 20px;
   font-weight: 700;
-  color: #737f8a;
+  color: #000000;
   transition: .3s all;
 }
 
 .portfolio-filter button.active {
-  border: 1px solid #528efd;
-  color: #528efd;
+  border: 1px solid #005bff;
+  color: #005bff;
 }
 
 .portfolio-items-wrapper .mix {
