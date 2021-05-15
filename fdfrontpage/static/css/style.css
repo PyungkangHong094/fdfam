@@ -304,6 +304,10 @@ a:hover {
   padding: 100px 0;
 }
 
+.section {
+  padding: 10pxpx 0;
+}
+
 @media (max-width: 480px) {
   .section {
     padding: 50px 0;
@@ -1642,7 +1646,7 @@ a:hover {
   Footer section
 ==================================================================*/
 .social-icon {
-  padding: 40px 0 5px;
+  padding: 20px 0 2px;
 }
 
 .social-icon ul {
